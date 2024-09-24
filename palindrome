@@ -1,0 +1,12 @@
+class stack:
+    def __init__(self):
+        self.stack=[]
+    def push(self,item):
+        self.stack.append(item)
+    def is_palindrome(self):
+        return self.stack==self.stack[::-1]
+stack=stack()
+stack.push(1)
+stack.push(2)
+stack.push(1)
+print(stack.is_palindrome())
